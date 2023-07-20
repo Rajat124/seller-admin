@@ -1,0 +1,17 @@
+.render {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 25rem;
+    border-radius: 6px;
+    margin: auto;
+    margin-bottom: 0.2rem;
+    border: 3px solid black;
+    background-color: white;
+}    
+
+.list{
+    margin: auto;
+    /* text-align: center; */
+    text-align: right;
+  }
