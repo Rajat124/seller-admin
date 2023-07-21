@@ -9,13 +9,12 @@ function App() {
     const localStorageObj = localStorage;
     const localStorageObjkeys = Object.keys(localStorageObj);
 
-    let ObjArray = [];
-    localStorageObjkeys.map((Ke) => {
-      const userDetails = localStorageObj[Ke];
+    const objArray = localStorageObjkeys.map((el) => {
+      const userDetails = localStorageObj[el];
       const userObj = JSON.parse(userDetails);
-      ObjArray.push(userObj);
-      setitemlist(ObjArray);
+      return userObj;
     });
+    setitemlist(objArray);
   }, []);
 
   const dataHandler = (list) => {

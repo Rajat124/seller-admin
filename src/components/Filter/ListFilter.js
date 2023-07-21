@@ -2,7 +2,6 @@ import RenderList from "../UI/RenderList";
 import "../FormInputs/Input.css";
 
 const ListFilter = (props) => {
-  // console.log(props.items);
   let electronicsList = [];
   let FoodList = [];
   let SkincareList = [];
