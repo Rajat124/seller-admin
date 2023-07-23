@@ -24,7 +24,7 @@ const ListFilter = (props) => {
       {electronicsList.map((item) => {
         return (
           <RenderList
-            // key={item.key} //Never use "key" keyword as propsname, it is reserved.
+            key={item.key} // Just to avoid key error
             itemkey={item.key}
             id={item.id}
             price={item.price}
@@ -38,6 +38,7 @@ const ListFilter = (props) => {
       {FoodList.map((item) => {
         return (
           <RenderList
+            key={item.key}
             itemkey={item.key}
             id={item.id}
             price={item.price}
@@ -51,6 +52,7 @@ const ListFilter = (props) => {
       {SkincareList.map((item) => {
         return (
           <RenderList
+            key={item.key}
             itemkey={item.key}
             id={item.id}
             price={item.price}
